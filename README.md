@@ -17,14 +17,7 @@ Let's make this clear by an example.
 
 ## Java Example
 
-If you are not familiar with Java, look in the repo files for other languages. I added the example for the following languages:
-
-- Java (`java-example/`)
-- Python (`python-example/`)
-- JavaScript (`javascript-example/`)
-- C# (`csharp-example/`)
-- Ruby (`ruby-example/`)
-- Go (`go-example/`)
+If you are not familiar with Java, look in the repo files for other languages (I've added: Java, Python, JavaScript, C#, Ruby, Go).
 
 ```java
 public class UsernameValidator {
