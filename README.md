@@ -167,9 +167,11 @@ For a practical example, check out this video of Uncle Bob, where he is coding l
 
 It takes time and practice to "master TDD".
 
-## Combine them (TDD + BDD)
+## Combine them (TDD + BDD)!
 
-TDD and BDD complement each other. TDD ensures your code is correct by driving development through failing tests and the Red-Green-Refactor cycle. BDD ensures your tests focus on what the system should do, not how it does it, by emphasizing behavior over implementation.
+TDD and BDD complement each other. It's best to use both.
+
+TDD ensures your code is correct by driving development through failing tests and the Red-Green-Refactor cycle. BDD ensures your tests focus on what the system should do, not how it does it, by emphasizing behavior over implementation.
 
 Write TDD-style tests to drive small, incremental changes (Red-Green-Refactor). Structure those tests with a BDD mindset, specifying behavior in clear, outcome-focused scenarios.
 This approach yields code that is:
