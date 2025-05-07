@@ -222,7 +222,15 @@ public void shouldGenerateAsyncMessagesFromInterface() {
 }
 ```
 
-## Feedback ⌨️😊
+---
+
+# Feedback ⌨️😊
 
 Feel free to contribute by submitting a PR or creating an issue.  
 **If this was helpful, you can show support by giving this repository a star! 🌟**
+
+---
+
+# License
+
+MIT
