@@ -1,3 +1,7 @@
+package com.example.username;
+
+import java.util.regex.Pattern;
+
 public class UsernameValidator {
 
     public boolean isValid(String username) {

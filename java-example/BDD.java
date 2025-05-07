@@ -1,30 +1,44 @@
-@Test
-void shouldAcceptValidUsernames() {
-    // Examples of valid usernames
-    assertTrue(validator.isValidUsername("abc"));
-    assertTrue(validator.isValidUsername("user123"));
-    ...
-}
+package com.example.username;
 
-@Test
-void shouldRejectTooShortUsernames() {
-    // Examples of too short usernames
-    assertFalse(validator.isValidUsername(""));
-    assertFalse(validator.isValidUsername("ab"));
-    ...
-}
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
-@Test
-void shouldRejectTooLongUsernames() {
-    // Examples of too long usernames
-    assertFalse(validator.isValidUsername("abcdefghijklmnopqrstuvwxyz"));
-    ...
-}
+public class BDDTest {
+    
+    private UsernameValidator validator;
+    
+    @BeforeEach
+    void setUp() {
+        validator = new UsernameValidator();
+    }
+    
+    @Test
+    void shouldAcceptValidUsernames() {
+        // Examples of valid usernames
+        assertTrue(validator.isValid("abc"));
+        assertTrue(validator.isValid("user123"));
+        assertTrue(validator.isValid("valid_username"));
+    }
 
-@Test
-void shouldRejectUsernamesWithIllegalChars() {
-    // Examples of usernames with illegal chars
-    assertFalse(validator.isValidUsername("user@name"));
-    assertFalse(validator.isValidUsername("special$chars"));
-    ...
+    @Test
+    void shouldRejectTooShortUsernames() {
+        // Examples of too short usernames
+        assertFalse(validator.isValid(""));
+        assertFalse(validator.isValid("ab"));
+    }
+
+    @Test
+    void shouldRejectTooLongUsernames() {
+        // Examples of too long usernames
+        assertFalse(validator.isValid("abcdefghijklmnopqrstuvwxyz"));
+    }
+
+    @Test
+    void shouldRejectUsernamesWithIllegalChars() {
+        // Examples of usernames with illegal chars
+        assertFalse(validator.isValid("user@name"));
+        assertFalse(validator.isValid("special$chars"));
+    }
 }
